@@ -1,0 +1,7 @@
+.figure__photo {
+  max-width: 75vw;
+  max-height: 75vh;
+  margin-bottom: 10px;
+  object-position: center;
+  object-fit: contain;
+}

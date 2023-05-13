@@ -1,0 +1,84 @@
+body {
+  background-color: #000
+}
+
+@import url(./vendor/normalize.css);
+
+@import url(./vendor/fonts/fonts.css);
+
+@import url(./blocks/page/page.css);
+
+@import url(./blocks/header/header.css);
+@import url(./blocks/header/__logo/header__logo.css);
+@import url(./blocks/header/__logo-image/header__logo-image.css);
+@import url(./blocks/header/__profile/header__profile.css);
+@import url(./blocks/header/__email/header__email.css);
+@import url(./blocks/header/__redirect/header__redirect.css);
+
+@import url(./blocks/profile/profile.css);
+@import url(./blocks/profile/__edit-avatar/profile__edit-avatar.css);
+@import url(./blocks/profile/__avatar/profile__avatar.css);
+@import url(./blocks/profile/__info/profile__info.css);
+@import url(./blocks/profile/__name/profile__name.css);
+@import url(./blocks/profile/__description/profile__description.css);
+@import url(./blocks/profile/__edit-button/profile__edit-button.css);
+@import url(./blocks/profile/__add-button/profile__add-button.css);
+
+@import url(./blocks/elements/elements.css);
+
+@import url(./blocks/element/element.css);
+@import url(./blocks/element/__image/element__image.css);
+@import url(./blocks/element/__title-like/element__title-like.css);
+@import url(./blocks/element/__title/element__title.css);
+@import url(./blocks/element/__like-button/element__like-button.css);
+@import url(./blocks/element/__like-counter/element__like-counter.css);
+@import url(./blocks/element/__like-button/_active/element__like-button_active.css);
+@import url(./blocks/element/__delete-button/element__delete-button.css);
+@import url(./blocks/element/__delete-button/_visible/element__delete-button_visible.css);
+
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__copyright/footer__copyright.css);
+
+@import url(./blocks/popup/popup.css);
+@import url(./blocks/popup/__figure/popup__figure.css);
+@import url(./blocks/popup/_opened/popup_opened.css);
+@import url(./blocks/popup/__container/popup__container.css);
+@import url(./blocks/popup/__heading/popup__heading.css);
+@import url(./blocks/popup/__text/popup__text.css);
+@import url(./blocks/popup/__image/popup__image.css);
+@import url(./blocks/popup/__form/popup__form.css);
+@import url(./blocks/popup/__profile-editing/popup__profile-editing.css);
+@import url(./blocks/popup/__card-editing/popup__card-editing.css);
+@import url(./blocks/popup/__card-deleting/popup__card-deleting.css);
+@import url(./blocks/popup-avatar/popup-avatar.css);
+@import url(./blocks/popup/__input/popup__input.css);
+@import url(./blocks/popup/__input/_type/popup__input_type_name.css);
+@import url(./blocks/popup/__input/_type/popup__input_type_description.css);
+@import url(./blocks/popup/__input/_type/popup__input_type_place.css);
+@import url(./blocks/popup/__input/_type/popup__input_type_source.css);
+@import url(./blocks/popup/__input/_type/popup__input_type_error.css);
+@import url(./blocks/popup/__input-error/popup__input-error.css);
+@import url(./blocks/popup/__input-error/_active/popup__input-error_active.css);
+@import url(./blocks/popup/__close-button/popup__close-button.css);
+@import url(./blocks/popup/__save-button/popup__save-button.css);
+@import url(./blocks/popup/__save-button/_inactive/popup__save-button_inactive.css);
+
+@import url(./blocks/popup-add/popup-add.css);
+
+@import url(./blocks/popup-figure/popup-figure.css);
+
+@import url(./blocks/popup-delete/popup-delete.css);
+
+@import url(./blocks/figure/figure.css);
+@import url(./blocks/figure/__container/figure__container.css);
+@import url(./blocks/figure/__photo/figure__photo.css);
+@import url(./blocks/figure/__title/figure__title.css);
+
+@import url(./blocks/auth/auth.css);
+@import url(./blocks/auth/__container/auth__container.css);
+@import url(./blocks/auth/__heading/auth__heading.css);
+@import url(./blocks/auth/__form/auth__form.css);
+@import url(./blocks/auth/__input/auth__input.css);
+@import url(./blocks/auth/__save-button/auth__save-button.css);
+@import url(./blocks/auth/__redirect/auth__redirect.css);
+@import url(./blocks/auth/__link/auth__link.css);

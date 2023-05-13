@@ -1,0 +1,10 @@
+.element__title-like {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 246px;
+  padding-top: 22px;
+  padding-left: 21px;
+  padding-bottom: 22px;
+  align-items: center;
+}

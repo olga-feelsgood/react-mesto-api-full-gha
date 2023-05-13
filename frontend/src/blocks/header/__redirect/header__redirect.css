@@ -1,0 +1,13 @@
+.header__redirect {
+  all: unset;
+  text-decoration: none;
+  color: white;
+  padding-top: 7px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.header__redirect:hover {
+  opacity: .6;
+}

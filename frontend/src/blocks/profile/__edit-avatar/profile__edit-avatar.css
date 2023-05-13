@@ -1,0 +1,28 @@
+.profile__edit-avatar::after {
+  content: '';
+  background-color: rgba(0, 0, 0, .8);
+  background-image: url(../../../images/profile_edit_pencil.svg);
+  background-size: 26px 26px;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: opacity .4s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+.profile__edit-avatar:hover::after {
+  opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .profile__edit-avatar::after {
+    left: calc((100% - 120px) / 2);
+  }
+}
