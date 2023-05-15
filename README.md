@@ -12,4 +12,4 @@ IP-адрес 51.250.15.214
 
 Frontend https://mesto-app.nomoredomains.monster
 
-Backend https://api.mesto-app.nomoredomains.monster
+Backend https://mesto-app.nomoredomains.monster.api
