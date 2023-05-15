@@ -4,12 +4,12 @@
   
 Пожалуйста, прикрепите в это описание ссылку на сайт, размещенный на Яндекс.Облаке.
 
-Адрес репозитория: https://github.com/...
-test
+Адрес репозитория: https://github.com/olga-feelsgood/react-mesto-api-full-gha
+
 ## Ссылки на проект
 
-IP-адрес x.x.x.x
+IP-адрес 51.250.15.214
 
-Frontend https://...
+Frontend https://mesto-app.nomoredomains.monster
 
-Backend https://...
+Backend https://api.mesto-app.nomoredomains.monster
