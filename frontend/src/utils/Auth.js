@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://mesto-app.nomoredomains.monster.api';
+export const BASE_URL = 'https://api.mesto-app.nomoredomains.monster';
 // export const BASE_URL = 'http://localhost:3000';
 
 function checkRes(res) {

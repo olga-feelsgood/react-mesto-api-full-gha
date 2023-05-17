@@ -94,7 +94,7 @@ class Api {
 }
 
 const api = new Api({
-  url: 'https://mesto-app.nomoredomains.monster.api',
+  url: 'https://api.mesto-app.nomoredomains.monster',
   // url: 'http://localhost:3000',
   headers: {
     'Authorization': `Bearer ${localStorage.getItem('token')}`,

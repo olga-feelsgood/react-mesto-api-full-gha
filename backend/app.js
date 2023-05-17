@@ -12,8 +12,8 @@ const app = express();
 const allowedCors = [
   'https://mesto-app.nomoredomains.monster',
   'http://mesto-app.nomoredomains.monster',
-  'https://mesto-app.nomoredomains.monster.api',
-  'http://api.mesto-app.nomoredomains.monster.api',
+  'https://api.mesto-app.nomoredomains.monster',
+  'http://api.mesto-app.nomoredomains.monster',
   'http://localhost:3000',
   'http://localhost:3001',
 ];
