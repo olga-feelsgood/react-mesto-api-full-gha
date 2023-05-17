@@ -14,14 +14,16 @@ const allowedCors = [
   'http://mesto-app.nomoredomains.monster',
   'https://api.mesto-app.nomoredomains.monster',
   'http://api.mesto-app.nomoredomains.monster',
-  'localhost:3000',
+  'http://localhost:3000',
+  'http://localhost:3001',
 ];
 
 app.use((req, res, next) => {
   const { origin } = req.headers; // Сохраняем источник запроса в переменную origin
   // проверяем, что источник запроса есть среди разрешённых
   const { method } = req; // Сохраняем тип запроса (HTTP-метод) в соответствующую переменную
-  // Значение для заголовка Access-Control-Allow-Methods по умолчанию (разрешены все типы запросов)
+  // Значение для заголовка Access - Control - Allow - Methods по умолчанию
+  // (разрешены все типы запросов)
   const DEFAULT_ALLOWED_METHODS = 'GET,HEAD,PUT,PATCH,POST,DELETE';
   const requestHeaders = req.headers['access-control-request-headers'];
 

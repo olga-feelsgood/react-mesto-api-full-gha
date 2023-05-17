@@ -81,16 +81,23 @@ class Api {
   }
 
   changeLikeCardStatus(cardId, isLiked) {
-    if (isLiked) {return this._addLikeToCard(cardId)}
-    else {return this._removeLikeFromCard(cardId)}
+    if (isLiked) { return this._addLikeToCard(cardId) }
+    else { return this._removeLikeFromCard(cardId) }
   }
 
-
+  updateTokenInHeaders() {
+    this._headers = {
+      'Authorization': `Bearer ${localStorage.getItem('token')}`,
+      'Content-Type': 'application/json',
+    }
+  }
 }
 
 const api = new Api({
   url: 'https://api.mesto-app.nomoredomains.monster',
+  // url: 'http://localhost:3000',
   headers: {
+    'Authorization': `Bearer ${localStorage.getItem('token')}`,
     'Content-Type': 'application/json',
   }
 })

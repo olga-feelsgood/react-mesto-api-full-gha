@@ -34,8 +34,32 @@ function App() {
     checkToken();
   }, [])
 
+  // useEffect(() => {
+  //   if (!loggedIn) {
+  //     return;
+  //   }
+
+  //   api.updateTokenInHeaders();
+
+  //   api.getUserInfo()
+  //     .then(setCurrentUser)
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+
+  //   api.getInitialCards()
+  //     .then(setCards)
+  //     .catch((err) => {
+  //       console.log(err);
+  //     });
+  // }, [loggedIn]);
+
   useEffect(() => {
-     loggedIn && 
+    if (!loggedIn) {
+      return;
+    }
+    api.updateTokenInHeaders();
+
     Promise.all([api.getUserInfo(), api.getInitialCards()])
       .then(([userData, cardsData]) => {
         setCurrentUser(userData);
@@ -43,6 +67,16 @@ function App() {
       })
       .catch((err) => { console.log(err) })
   }, [loggedIn])
+
+  // useEffect(() => {
+  //   loggedIn &&
+  //     Promise.all([api.updateTokenInHeaders(), api.getUserInfo(), api.getInitialCards()])
+  //       .then(([userData, cardsData]) => {
+  //         setCurrentUser(userData);
+  //         setCards(cardsData)
+  //       })
+  //       .catch((err) => { console.log(err) })
+  // }, [loggedIn])
 
   function handleEditAvatarClick() {
     setIsEditAvatarPopupOpen(true);
@@ -72,7 +106,7 @@ function App() {
 
   function handleCardLike(card) {
     // Снова проверяем, есть ли уже лайк на этой карточке
-    const isLiked = card.likes.some(i => i._id === currentUser._id);
+    const isLiked = card.likes.some(i => i === currentUser._id);
     // Отправляем запрос в API и получаем обновлённые данные карточки
     api.changeLikeCardStatus(card._id, !isLiked)
       .then((newCard) => {
@@ -137,7 +171,7 @@ function App() {
           localStorage.setItem('token', data.token);
           setLoggedIn(true);
           setUserEmail(email);
-            
+
           navigate('/', { replace: true })
         }
       })
